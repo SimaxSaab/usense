@@ -1,0 +1,15 @@
+<div>
+    <p>first solution</p>
+    <input [(ngModel)]="password" (input)="calculatePasswordStrength()" />
+    <div class="strength">
+        <div
+            [ngClass]="{'strong': strength === 3, 'medium': strength === 2, 'easy': strength === 0 || strength === 1, 'empty': !password}">
+        </div>
+        <div
+            [ngClass]="{'strong': strength === 3, 'medium': strength === 2, 'easy': strength === 0, 'empty': !password || strength === 1}">
+        </div>
+        <div
+            [ngClass]="{'strong': strength === 3, 'easy': strength === 0, 'empty': !password || strength === 2 || strength === 1}">
+        </div>
+    </div>
+</div>

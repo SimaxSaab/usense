@@ -1,0 +1,32 @@
+.strength {
+    display: flex;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.strength>div {
+    width: 33.33%;
+    height: 20px;
+}
+
+.strength>div::after {
+    content: '|';
+}
+
+.empty {
+    background-color: gray;
+}
+
+.easy {
+    background-color: red;
+}
+
+.medium {
+    background-color: yellow;
+}
+
+.strong {
+    background-color: green;
+}

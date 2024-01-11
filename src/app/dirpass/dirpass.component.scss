@@ -1,0 +1,17 @@
+input {
+    margin-bottom: 10px;
+}
+
+.password-strength {
+    display: flex;
+}
+
+.strength-section {
+    width: 33.33%;
+    height: 20px;
+    background-color: gray;
+}
+
+.strength-section::after {
+    content: '|';
+}
